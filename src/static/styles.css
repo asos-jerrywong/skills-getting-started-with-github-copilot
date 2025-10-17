@@ -142,3 +142,88 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section styling */
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-section h5 {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #1a237e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+/* Delete button next to participant */
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.participant-delete:hover {
+  background: rgba(198,40,40,0.08);
+  color: #b71c1c;
+}
+
+.participant-delete:active {
+  transform: translateY(1px);
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1a237e;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.participant-name {
+  font-size: 14px;
+  color: #333;
+  word-break: break-word;
+}
+
+.no-participants {
+  color: #666;
+  font-style: italic;
+  padding: 6px 8px;
+}
